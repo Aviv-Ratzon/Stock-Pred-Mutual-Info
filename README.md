@@ -3,15 +3,25 @@ PyTorch implementation of Least-Squares DQN with extras (DuelingDQN, Boosted FQI
 
 - [Stock-Pred-Mutual-Info](#Stock-Pred-Mutual-Info)
   * [Background](#background)
+  * [Usage](#usage)
   * [Prerequisites](#prerequisites)
   * [Files in the repository](#files-in-the-repository)
-  * [Usage](#usage)
   * [Parameters](#parameters)
   * [References](#references)
 
 ## Background
 This is a POC tool ment to check the mutual information between a stock and a group of other stocks. 
 
+
+## Usage
+
+1. Fill in group names and stock names in `/config/StockNames.csv`
+1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`)
+1. Edit `config/config.py`, mainly `RUN_CONFIG`:
+    1. `'RUN_CONFIG':'run train'` whether to train models
+    1. `'train stocks':'train stocks'` which stock groups to train
+    1. `'compare stocks':'compare stocks'` which stock groups to compare
+1. run main.py
 
 
 ## Prerequisites
@@ -37,17 +47,6 @@ This is a POC tool ment to check the mutual information between a stock and a gr
 |`run_train.py`| function that runs training procedure for the configured groups and saves models and results|
 |`train.py`| functions that handle training of a model|
 |`utils.py`| utility functions|
-
-
-## Usage
-
-1. Fill in group names and stock names in `/config/StockNames.csv`
-1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`)
-1. Edit `config/config.py`, mainly `RUN_CONFIG`:
-    1. `'RUN_CONFIG':'run train'` whether to train models
-    1. `'train stocks':'train stocks'` which stock groups to train
-    1. `'compare stocks':'compare stocks'` which stock groups to compare
-1. run main.py
 
 # Parameters
 1. MODEL_CONFIG
