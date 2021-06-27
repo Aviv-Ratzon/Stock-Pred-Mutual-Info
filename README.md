@@ -18,9 +18,9 @@ This is a POC tool ment to check the mutual information between a stock and a gr
 1. Fill in group names and stock names in `/config/StockNames.csv`
 1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`)
 1. Edit `config/config.py`, mainly `RUN_CONFIG`:
-    1. `'RUN_CONFIG':'run train'` whether to train models
-    1. `'train stocks':'train stocks'` which stock groups to train
-    1. `'compare stocks':'compare stocks'` which stock groups to compare
+    - `'RUN_CONFIG':'run train'` whether to train models
+    - `'train stocks':'train stocks'` which stock groups to train
+    - `'compare stocks':'compare stocks'` which stock groups to compare
 1. run main.py
 
 
@@ -49,26 +49,26 @@ This is a POC tool ment to check the mutual information between a stock and a gr
 |`utils.py`| utility functions|
 
 # Parameters
-1. MODEL_CONFIG
-    1. `n_hid`: Number of hidden units for the attention layers
-    1. `dropout`: Dropout of transformer model
-    1. `n_layers`: Number of multi-head attention layers
-1. TRAIN_CONFIG
-    1. `lr`: Learning rate
-    1. `num_epochs`: number of epochs
-    1. `seq_len`: Number of consequtive days that the model is trained on to predict one day ahead
-    1. `bsz`: Batch size (number of sequences that are trained before calling `backward`
-    1. `gamma`: lr decrease at each epoch
-    1. `log_interval`: how many sequences to run before saving train loss to list and printing progress
-    1. `chkpt_path`: path for saving chekpoints
-    1. `results_path`: path for saving results
-1. TRAIN_CONFIG
-    1. `data_dir`: location of data directory where stocks are saved
-    1. `stock_names_file`: location of file containing stock names
-    1. `stock_symbols_file`: location of file containing stock symbols
-    1. `n_dim`: dimensionality of data (5 for OHLCV)
-    1. `predict_column`: The dimension of input to predict
-    1. `log_interval`: how many sequences to run before saving train loss to list and printing progress
+- MODEL_CONFIG
+    - `n_hid`: Number of hidden units for the attention layers
+    - `dropout`: Dropout of transformer model
+    - `n_layers`: Number of multi-head attention layers
+- TRAIN_CONFIG
+    - `lr`: Learning rate
+    - `num_epochs`: number of epochs
+    - `seq_len`: Number of consequtive days that the model is trained on to predict one day ahead
+    - `bsz`: Batch size (number of sequences that are trained before calling `backward`
+    - `gamma`: lr decrease at each epoch
+    - `log_interval`: how many sequences to run before saving train loss to list and printing progress
+    - `chkpt_path`: path for saving chekpoints
+    - `results_path`: path for saving results
+- TRAIN_CONFIG
+    - `data_dir`: location of data directory where stocks are saved
+    - `stock_names_file`: location of file containing stock names
+    - `stock_symbols_file`: location of file containing stock symbols
+    - `n_dim`: dimensionality of data (5 for OHLCV)
+    - `predict_column`: The dimension of input to predict
+    - `log_interval`: how many sequences to run before saving train loss to list and printing progress
 
 ## References
 [1] Kazemi, Seyed Mehran, et al. "Time2vec: Learning a vector representation of time." arXiv preprint arXiv:1907.05321 (2019).
