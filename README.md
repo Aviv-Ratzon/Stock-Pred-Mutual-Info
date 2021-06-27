@@ -2,18 +2,6 @@
 
 This is a POC tool ment to check the mutual information between a stock and group of other stocks. 
 
-We can divide the workflow into 2 main steps:
-1. Pencil stroke generation (captures the general strucure of the scene)
-2. Pencil tone drawing (captures shapes shadows and shading)
-
-Combining the results from these steps should yield the desired result. The workflow can be depicted as follows:
-![alt text](https://github.com/taldatech/image2pencil-drawing/blob/master/images/Workflow.JPG)
-
-* Both figures were taken from the original paper
-
-Another example:
-![alt text](https://github.com/taldatech/image2pencil-drawing/blob/master/images/jl_compare.JPG)
-
 # Usage
 1. Fill in group names and stock names in /config/StockNames.csv
 2. Fill in group names and stock symbols in /config/StockSymbols.csv (in accordance with StockNames.csv)
@@ -36,6 +24,4 @@ Another example:
 * pencils: pencil textures for generating the Pencil Texture Map
 
 # Reference
-[1] Lu C, Xu L, Jia J. Combining sketch and tone for pencil drawing production[C]//Proceedings of the Symposium on Non-Photorealistic Animation and Rendering. Eurographics Association, 2012: 65-73.
-
-[2] Matlab implementation by "candtcat1992" - https://github.com/candycat1992/PencilDrawing
+[1] Kazemi, Seyed Mehran, et al. "Time2vec: Learning a vector representation of time." arXiv preprint arXiv:1907.05321 (2019).
