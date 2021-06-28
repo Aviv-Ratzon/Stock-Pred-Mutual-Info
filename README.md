@@ -1,7 +1,7 @@
 # Stock-Pred-Mutual-Info
 PyTorch implementation of Least-Squares DQN with extras (DuelingDQN, Boosted FQI)
 
-![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/Loss_Change_By_Group.png)
+![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/images/Loss_Change_By_Group.png)
 
 - [Stock-Pred-Mutual-Info](#Stock-Pred-Mutual-Info)
   * [Background](#background)
