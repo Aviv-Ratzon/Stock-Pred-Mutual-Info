@@ -23,7 +23,7 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
     - `'RUN_CONFIG':'run train'` whether to train models
     - `'train stocks':'train stocks'` which stock groups to train
     - `'compare stocks':'compare stocks'` which stock groups to compare
-1. run main.py
+1. set working directory to main directory and run main.py
 
 
 ## Prerequisites
