@@ -1,5 +1,6 @@
 # Stock-Pred-Mutual-Info
-PyTorch implementation of Least-Squares DQN with extras (DuelingDQN, Boosted FQI)
+POC tool ment to check the mutual information between stocks. The project measures performance gain of adding information from a group of stocks to the prediction model of a specific stock.
+
 
 ![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/images/Loss_Change_By_Group.png)
 
@@ -12,8 +13,7 @@ PyTorch implementation of Least-Squares DQN with extras (DuelingDQN, Boosted FQI
   * [References](#references)
 
 ## Background
-This is a POC tool ment to check the mutual information between a stock and a group of other stocks. 
-
+Stock prices prediction problem is considered an unsolved, possibly even unsolvable problem. Other than the stock's OHLCV data, additional data most be supplied to a model in order to obtain enough information for a prediction. Most projects focus on textual data - twitter, news, finance articles and more. In this project we explore the possibilty of using information about stocks of companies that are related to the predicted stock's company. This simple model can be used to explore connections for more complex solutions.
 
 ## Usage
 
