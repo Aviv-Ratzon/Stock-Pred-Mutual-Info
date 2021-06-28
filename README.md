@@ -34,7 +34,7 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
 |`pandas`|  `1.1.4`|
 |`matplotlib`|  `3.3.4`|
 |`numpy`|  `1.19.4`|
-|`yahoo-finance`|  `1.6`|
+|`yfinance`|  `0.1.59`|
 
 
 ## Files in the repository
