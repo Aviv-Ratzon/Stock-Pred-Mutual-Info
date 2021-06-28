@@ -2,9 +2,9 @@ import torch
 
 # Options for running project
 RUN_CONFIG = {
-    'run train': False,
+    'run train': True,
     # options are ['All'] or list of names e.g ['Banks', 'Unrelated 4', 'Unrelated 5']
-    'train stocks': ['Pharmaceutical', 'Unrelated 4', 'Unrelated 5'],
+    'train stocks': ['All'],
     # options are ['All'] or list of names
     'compare stocks': ['All']
 }
