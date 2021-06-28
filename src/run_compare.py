@@ -26,9 +26,12 @@ def run_compare():
             names_stocks.append(stock_name)
             names.append(group_name)
             # Load results of single and mutual models for the current stock
-            train_data, train_loss_single, train_preds_single, test_data, test_loss_single, test_preds_single = torch.load(path_results + stock_name + '_single_results.pth')
-            train_data_mutual, train_loss_mutual, train_preds_mutual, test_data_mutual, test_loss_mutual, test_preds_mutual = torch.load(path_results + stock_name + '_mutual_results.pth')
-
+            try:
+                train_data, train_loss_single, train_preds_single, test_data, test_loss_single, test_preds_single = torch.load(path_results + stock_name + '_single_results.pth')
+                train_data_mutual, train_loss_mutual, train_preds_mutual, test_data_mutual, test_loss_mutual, test_preds_mutual = torch.load(path_results + stock_name + '_mutual_results.pth')
+            except:
+                raise RuntimeError('Missing ' + group_name + ' - ' + stock_name + ' model, reconfig and run train')
+            
             # Append losses to lists
             single_loss_train.append(train_loss_single)
             single_loss_test.append(test_loss_single)
