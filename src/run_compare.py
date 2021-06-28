@@ -48,7 +48,8 @@ def run_compare():
     plt.legend()
     plt.axhline(0, c='r')
     [plt.axvline(ind+0.5, c='gray', alpha=0.25, linestyle='--') for ind in inds]
-    plt.axvline(np.where(names=='Unrelated 1')[0][0]-0.5, c='orange', alpha=0.5, linestyle='--')
+    if 'Unrelated 1' in names:
+        plt.axvline(np.where(names=='Unrelated 1')[0][0]-0.5, c='orange', alpha=0.5, linestyle='--')
     plt.title('Train Loss Change')
     plt.xticks(np.arange(len(loss_changes_train)), names, rotation=90)
     plt.gca().yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter())
@@ -62,7 +63,8 @@ def run_compare():
     plt.legend()
     plt.axhline(0, c='r')
     [plt.axvline(ind+0.5, c='gray', alpha=0.25, linestyle='--') for ind in inds]
-    plt.axvline(np.where(names=='Unrelated 1')[0][0]-0.5, c='orange', alpha=0.5, linestyle='--')
+    if 'Unrelated 1' in names:
+        plt.axvline(np.where(names=='Unrelated 1')[0][0]-0.5, c='orange', alpha=0.5, linestyle='--')
     plt.title('Test Loss Change')
     plt.xticks(np.arange(len(loss_changes_test)), names, rotation=90)
     plt.gca().yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter())
@@ -77,7 +79,8 @@ def run_compare():
     plt.bar(np.arange(len(avg_changes_train))+0.125, avg_changes_test, label='test', width=0.25)
     plt.legend()
     plt.axhline(0, c='r')
-    plt.axvline(np.where(np.unique(names) =='Unrelated 1')[0][0]-0.5, c='orange', alpha=0.5, linestyle='--')
+    if 'Unrelated 1' in names:
+        plt.axvline(np.where(np.unique(names) =='Unrelated 1')[0][0]-0.5, c='orange', alpha=0.5, linestyle='--')
     plt.title('Average Loss Change by Group', fontsize=15)
     plt.xticks(np.arange(len(avg_changes_train)), np.unique(names), rotation=45, fontsize=15)
     plt.gca().yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter())
