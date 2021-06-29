@@ -41,8 +41,8 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
 
 |File name         | Purpsoe |
 |----------------------|------|
-|`config.py`| configuration of which models to run hyperparameters |
-|`download_data.py`| function for downloading the stocks listed in StockSymbols.csv |
+|`config.py`| run config, data config and hyperparameters |
+|`download_data.py`| function for downloading the stocks listed in `StockSymbols.csv` |
 |`Main.py`| main function, run this file after configuration|
 |`model.py`| contains TransformerEncoder model and Time2Vec model|
 |`run_compare.py`| function that loads results(losses and predicitons) and plots comparison |
