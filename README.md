@@ -20,10 +20,10 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
 1. Fill in group names and stock names in `/config/StockNames.csv`
 1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`)
 1. Edit `config/config.py`, mainly `RUN_CONFIG`:
-    - `'RUN_CONFIG':'run train'` whether to train models
-    - `'train stocks':'train stocks'` which stock groups to train
-    - `'compare stocks':'compare stocks'` which stock groups to compare
-1. set working directory to main directory and run main.py
+    - `'run train'`: whether to train models
+    - `'train stocks'`: which stock groups to train
+    - `'compare stocks'`: which stock groups to compare
+1. set working directory to root directory (not `src`) and run main.py
 
 
 ## Prerequisites
