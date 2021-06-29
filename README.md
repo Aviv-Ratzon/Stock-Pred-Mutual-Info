@@ -15,6 +15,8 @@ POC tool ment to check the mutual information between stocks. The project measur
 ## Background
 Stock prices prediction problem is considered an unsolved, possibly even unsolvable problem. Other than the stock's OHLCV data, additional data most be supplied to a model in order to obtain enough information for a prediction. Most projects focus on textual data - twitter, news, finance articles and more. In this project we explore the possibilty of using information about stocks of companies that are related to the predicted stock's company. This simple model can be used to explore connections for more complex solutions.
 
+The prediction model is largely based on the work by Jan Schmitz [1]
+
 ## Usage
 
 1. Fill in group names and stock names in `/config/StockNames.csv`
@@ -44,7 +46,7 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
 |`config.py`| run config, data config and hyperparameters |
 |`download_data.py`| function for downloading the stocks listed in `StockSymbols.csv` |
 |`Main.py`| main function, run this file after configuration|
-|`model.py`| contains TransformerEncoder model and Time2Vec model|
+|`model.py`| contains TransformerEncoder model and Time2Vec [2] model|
 |`run_compare.py`| function that loads results(losses and predicitons) and plots comparison |
 |`run_train.py`| function that runs training procedure for the configured groups and saves models and results|
 |`train.py`| functions that handle training of a model|
@@ -73,7 +75,7 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
     - `log_interval`: how many sequences to run before saving train loss to list and printing progress
 
 ## References
-[1] Kazemi, Seyed Mehran, et al. "Time2vec: Learning a vector representation of time." arXiv preprint arXiv:1907.05321 (2019).
-
+[1] https://towardsdatascience.com/stock-predictions-with-state-of-the-art-transformer-and-time-embeddings-3a4485237de6
+[2] Kazemi, Seyed Mehran, et al. "Time2vec: Learning a vector representation of time." arXiv preprint arXiv:1907.05321 (2019).
 
 
