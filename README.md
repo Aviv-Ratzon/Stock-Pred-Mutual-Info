@@ -76,6 +76,7 @@ The prediction model is largely based on the work by Jan Schmitz [1]
 
 ## References
 [1] https://towardsdatascience.com/stock-predictions-with-state-of-the-art-transformer-and-time-embeddings-3a4485237de6
+
 [2] Kazemi, Seyed Mehran, et al. "Time2vec: Learning a vector representation of time." arXiv preprint arXiv:1907.05321 (2019).
 
 
