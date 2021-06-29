@@ -59,7 +59,7 @@ Stock prices prediction problem is considered an unsolved, possibly even unsolva
     - `lr`: Learning rate
     - `num_epochs`: number of epochs
     - `seq_len`: Number of consequtive days that the model is trained on to predict one day ahead
-    - `bsz`: Batch size (number of sequences that are trained before calling `backward`
+    - `bsz`: Batch size (number of sequences that are trained before calling `backward()`)
     - `gamma`: lr decrease at each epoch
     - `log_interval`: how many sequences to run before saving train loss to list and printing progress
     - `chkpt_path`: path for saving chekpoints
