@@ -13,7 +13,7 @@ POC tool ment to check the mutual information between stocks. The project measur
   * [References](#references)
 
 ## Background
-Stock prices prediction problem is considered an unsolved, possibly even unsolvable problem. Other than the stock's OHLCV data, additional data most be supplied to a model in order to obtain enough information for a prediction. Most projects focus on textual data - twitter, news, finance articles and more. In this project we explore the possibilty of using information about stocks of companies that are related to the predicted stock's company. This simple model can be used to explore connections for more complex solutions.
+Daily stock prices prediction problem is considered an unsolved, possibly even unsolvable problem. Other than the stock's OHLCV data, additional data most be supplied to a model in order to obtain enough information for a prediction. Most projects focus on textual data - twitter, news, finance articles and more. In this project we explore the possibilty of using information about stocks of companies that are related to the predicted stock's company. This simple model can be used to explore connections for more complex solutions.
 
 The prediction model is largely based on the work by Jan Schmitz [1]
 
