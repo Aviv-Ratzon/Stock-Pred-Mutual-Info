@@ -3,6 +3,7 @@ import torch
 # Options for running project
 RUN_CONFIG = {
     'run train': True,
+    'retrain': False,
     # options are ['All'] or list of names e.g ['Banks', 'Unrelated 4', 'Unrelated 5']
     'train stocks': ['All'],
     # options are ['All'] or list of names
@@ -19,7 +20,7 @@ MODEL_CONFIG = {
 # Hyper parameters for training
 TRAIN_CONFIG = {
     'lr': 0.1,
-    'num_epochs': 25,
+    'num_epochs': 15,
     'device': torch.device("cuda" if torch.cuda.is_available() else "cpu"),
     'seq_len': 128,
     'bsz': 32,
