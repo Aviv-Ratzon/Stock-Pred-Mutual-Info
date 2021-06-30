@@ -19,8 +19,10 @@ The prediction model is largely based on the work by Jan Schmitz [1]
 
 ## Usage
 
-1. Fill in group names and stock names in `/config/StockNames.csv`
-1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`)
+1. Fill in group names and stock names in `/config/StockNames.csv`. Example:
+![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/images/StockNames.png)
+1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`). Example:
+![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/images/StockSymbols.png)
 1. Edit `config/config.py`, mainly `RUN_CONFIG`:
     - `'run train'`: whether to train models
     - `'retrain'`: whether to retrain models that already have a checkpoint
