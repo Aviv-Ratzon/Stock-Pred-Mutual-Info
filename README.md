@@ -23,6 +23,7 @@ The prediction model is largely based on the work by Jan Schmitz [1]
 1. Fill in group names and stock symbols in `/config/StockSymbols.csv` (in accordance with `StockNames.csv`)
 1. Edit `config/config.py`, mainly `RUN_CONFIG`:
     - `'run train'`: whether to train models
+    - `'retrain'`: whether to retrain models that already have a checkpoint
     - `'train stocks'`: which stock groups to train
     - `'compare stocks'`: which stock groups to compare
 1. set working directory to root directory (not `src`) and run main.py
