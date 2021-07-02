@@ -3,6 +3,7 @@ POC tool ment to check the mutual information between stocks. The project measur
 
 
 ![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/images/Loss_Change_Stats.png)
+![results](https://github.com/Aviv-Ratzon/Shit-Class_Stock-Pred/blob/main/images/Loss_Change_By_Group.png)
 
 - [Stock-Pred-Mutual-Info](#Stock-Pred-Mutual-Info)
   * [Background](#background)
