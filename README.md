@@ -57,6 +57,7 @@ The prediction model is largely based on the work by Jan Schmitz [1]
 |`utils.py`| utility functions|
 
 # Parameters
+Edit these parameters in `config/config.py` file
 - MODEL_CONFIG
     - `n_hid`: Number of hidden units for the attention layers
     - `dropout`: Dropout of transformer model
