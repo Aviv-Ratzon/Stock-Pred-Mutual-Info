@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.nn import TransformerEncoder, TransformerEncoderLayer
-from config import config
+import config
 
 
 class Time2Vector(nn.Module):

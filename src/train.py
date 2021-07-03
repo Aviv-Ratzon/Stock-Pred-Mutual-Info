@@ -1,4 +1,3 @@
-from utils import *
 import time
 import torch
 from model import *

@@ -2,7 +2,7 @@ from train import *
 import pandas as pd
 import numpy as np
 import torch
-from config import config
+import config
 from datetime import datetime, timedelta
 
 
@@ -35,6 +35,8 @@ def get_group_data(group):
     for name, symbol in zip(names, symbols):
         df = pd.read_csv(data_dir + symbol + '.csv')
         df.set_index('Date', inplace=True)
+        df = df[df.index.isin(valid_dates)]
+        df = df.dropna()
         # Align dates to other stocks in group
         df = df[df.index.isin(valid_dates)]
 
@@ -112,7 +114,7 @@ def batchify(data):
 def get_batch(source, i, ):
     seq_len = config.TRAIN_CONFIG['seq_len']
     data = source[i:i + seq_len]
-    target = source[i + seq_len + 1, config.DATA_CONFIG['predict_column']]
+    target = source[i+seq_len+1, config.DATA_CONFIG['predict_column']]
     return data, target
 
 
@@ -125,6 +127,6 @@ def evaluate(eval_model, data_source, criterion):
         for i in range(0, data_source.size(0) - seq_len - 1):
             data, targets = get_batch(data_source, i)
             output = eval_model(data)
-            total_loss += len(data) * criterion(output, targets).item()
+            total_loss += criterion(output, targets).item()
             outputs.append(output)
     return total_loss / (data_source.size(0) - seq_len - 1), torch.tensor(outputs)

@@ -1,4 +1,4 @@
-from config import config
+import config
 from run_train import run_train
 from run_compare import run_compare
 from download_data import download_data
